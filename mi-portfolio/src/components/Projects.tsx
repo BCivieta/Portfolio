@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const demoProjects = [
   {
-    title: "Panel de Analytics",
+    title: "Switkor",
     description:
-      "Dashboard interactivo con visualizaciones de datos en tiempo real, gráficos responsivos y filtros avanzados. Implementa carga diferida y optimización de rendimiento.",
-    technologies: ["Next.js", "TypeScript", "D3.js", "Tailwind CSS", "Chart.js"],
-    liveUrl: "https://analytics-demo.vercel.app",
-    githubUrl: "https://github.com/tuusuario/analytics-dashboard",
-    image: "/projects/analytics-dashboard.jpg",
-    tags: ["Dashboard", "Data Viz", "Performance"]
+      "Aplicación web que genera planes de entrenamiento físico personalizados según objetivos, nivel, disponibilidad y sexo. Incluye base de datos de ejercicios, planificación automática y un dashboard con calendario y métricas de progreso.",
+    technologies:  ["Next.js", "NestJS", "MySQL", "Tailwind CSS", "TypeORM"],
+    liveUrl: "https://switkor.blancacivieta.es",
+    githubUrl: "https://github.com/BCivieta/Switkor",
+    image: "/projects/Switkor-mok.png",
+    tags: ["Full Stack", "Fitness", "Planificación"]
   },
   {
     title: "E-commerce React",

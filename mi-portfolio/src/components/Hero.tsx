@@ -33,8 +33,8 @@ export default function Hero() {
       </video>
       <div className="overlay" />
       <div className="content">
-        <h1>Hola, soy Tu Nombre</h1>
-        <p className="lead">Frontend · UX · Animaciones sutiles · Next.js. Construyo interfaces rápidas, accesibles y con estética tech.</p>
+        <h1>Hola, soy Blanca Civieta</h1>
+        <p className="lead">Fullstack · Node · Next.js. Lógica, creatividad y trabajo en equipo.</p>
         <div className="cta">
           <a className="btn primary" href="#proyectos">Ver proyectos</a>
           <a className="btn secondary" href="#trayectoria">Ver trayectoria</a>

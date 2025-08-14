@@ -12,20 +12,20 @@ export default function Home() {
         <div className="about-content">
           <div className="about-text">
             <p className="lead">
-              ¡Hola! Soy un/a desarrollador/a full stack apasionado/a por crear experiencias digitales 
-              que no solo se vean bien, sino que también funcionen de manera excepcional.
+                Soy desarrolladora web Full Stack Jr. con formación en Desarrollo de Aplicaciones Web
+                y una sólida trayectoria previa en el ámbito del deporte y la salud.
             </p>
             
             <p>
-              Mi viaje en el desarrollo web comenzó hace más de 2 años, cuando empece a estudiar desarrollo de apllicaciones web. Me especializo 
-              en Node.js, React, Next.js y TypeScript, pero también disfruto explorando nuevas herramientas 
-              y frameworks que puedan mejorar la experiencia del usuario.
+              Me apasiona la combinación de lógica, creatividad y aprendizaje constante que ofrece 
+              el desarrollo web. Disfruto trabajando en equipo, compartiendo ideas y creando 
+              soluciones que aporten valor real a las personas.
             </p>
             
             <p>
-              Lo que más me motiva es la intersección entre código limpio, diseño atractivo y 
-              rendimiento óptimo. Creo que la mejor aplicación es aquella que es invisible para 
-              el usuario - simplemente funciona, y funciona bien.
+              Mi perfil se caracteriza por la organización, la empatía y la capacidad de adaptación, 
+              cualidades que me permiten afrontar nuevos retos y colaborar de forma efectiva 
+              en entornos dinámicos.
             </p>
             
             <div className="skills-section">
@@ -37,19 +37,18 @@ export default function Home() {
                 </div>
                 <div className="skill-category">
                   <h4>Backend</h4>
-                  <p>Node.js, Express, MongoDB, PostgreSQL, REST APIs</p>
+                  <p>Node.js, Express, Nest, PostgreSQL, REST APIs</p>
                 </div>
                 <div className="skill-category">
                   <h4>Herramientas</h4>
-                  <p>Git, Docker, AWS, Vercel, Figma, Jest</p>
+                  <p>Git, AWS, Vercel, Figma</p>
                 </div>
               </div>
             </div>
             
             <p>
-              Cuando no estoy programando, me encontrarás explorando nuevas tendencias en UX/UI, 
-              contribuyendo a proyectos de código abierto, o disfrutando de un buen café mientras 
-              leo sobre las últimas innovaciones en tecnología web.
+               Mi objetivo es seguir creciendo como profesional, mejorar mis competencias técnicas 
+                y participar en proyectos que supongan un reto y un impacto positivo.
             </p>
             
             <div className="cta-section">
