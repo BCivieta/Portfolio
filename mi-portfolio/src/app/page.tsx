@@ -65,7 +65,7 @@ export default function Home() {
       <Section id="contacto" title="¿Trabajamos juntos?" eyebrow="Contacto">
         <div className="contact-content">
           <p>
-            ¿Tienes un proyecto en mente? ¿Buscas un desarrollador/a que pueda llevar tus ideas 
+            ¿Tienes un proyecto en mente? ¿Buscas un desarrollador que pueda llevar tus ideas 
             al siguiente nivel? Me encantaría escuchar sobre tu proyecto y ver cómo podemos 
             colaborar para hacerlo realidad.
           </p>
@@ -73,18 +73,18 @@ export default function Home() {
           <div className="contact-methods">
             <div className="contact-method">
               <h4>📧 Email</h4>
-              <a href="mailto:tu@email.com">mi@email.com</a>
+              <a href="mailto:blancacivieta@gmail.com">blancacivieta@gmail.com</a>
             </div>
             <div className="contact-method">
               <h4>💼 LinkedIn</h4>
-              <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/tuusuario
+              <a href="https://www.linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348/" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348
               </a>
             </div>
             <div className="contact-method">
               <h4>🐙 GitHub</h4>
-              <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
-                github.com/miusuario
+              <a href="https://github.com/BCivieta" target="_blank" rel="noopener noreferrer">
+                github.com/BCivieta
               </a>
             </div>
           </div>

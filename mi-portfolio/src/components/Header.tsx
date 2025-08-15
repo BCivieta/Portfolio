@@ -13,9 +13,38 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
-
+  const toggleMobileMenu = () => setIsMobileMenuOpen(v => !v);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
+  // ➜ Cerrar al cambiar el hash (#sobre-mi, #proyectos…)
+  useEffect(() => {
+    const onHash = () => setIsMobileMenuOpen(false);
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  // ➜ Cerrar al pasar a escritorio
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth > 768) setIsMobileMenuOpen(false);
+    };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  // ➜ Cerrar con Escape
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMobileMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  // ➜ Bloquear scroll del body cuando está abierto (y reponer luego)
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+  }, [isMobileMenuOpen]);
 
   return (
     <header className="site-header" data-scrolled={isScrolled}>
@@ -23,18 +52,21 @@ export default function Header() {
         <Link className="brand" href="#inicio" onClick={closeMobileMenu}>
           Portfolio
         </Link>
-        
-        <button 
-          className="mobile-menu-toggle" 
+
+        <button
+          className={`mobile-menu-toggle ${isMobileMenuOpen ? "open" : ""}`}
           onClick={toggleMobileMenu}
-          aria-label="Abrir menú de navegación"
+          aria-label={isMobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="primary-navigation"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
 
-        <ul className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
+        {/* Backdrop clickable para cerrar al tocar fuera */}
+        {isMobileMenuOpen && <div className="nav-backdrop" onClick={closeMobileMenu} />}
+
+        <ul id="primary-navigation" className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`}>
           <li><a href="#sobre-mi" onClick={closeMobileMenu}>Sobre mí</a></li>
           <li><a href="#proyectos" onClick={closeMobileMenu}>Proyectos</a></li>
           <li><a href="#experiencia" onClick={closeMobileMenu}>Experiencia</a></li>
