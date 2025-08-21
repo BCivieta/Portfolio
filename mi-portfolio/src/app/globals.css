@@ -241,12 +241,15 @@ section.section {
   position: relative;
   padding: clamp(48px, 8vw, 96px) 20px;
   overflow: hidden;
+  z-index: 0;
 }
 
 /* Sobre mí con fondo espacial */
 #sobre-mi {
-  background: linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(20,20,30,0.95) 100%);
+  background: linear-gradient(135deg, rgba(25,25,25,0.95) 0%, rgba(35,35,45,0.95) 100%);
+  position: relative;
 }
+
 
 #sobre-mi::before {
   content: '';
@@ -255,13 +258,9 @@ section.section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/video/poster.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  opacity: 0.08;
+  background: radial-gradient(circle at 20% 80%, rgba(240, 147, 251, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(93, 214, 255, 0.1) 0%, transparent 50%);
   z-index: -1;
-  filter: blur(3px);
 }
 
 .section .wrap {
@@ -418,12 +417,13 @@ section.section {
 #proyectos::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(93, 214, 255, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 70% 80%, rgba(240, 147, 251, 0.1) 0%, transparent 50%);
+  inset: 0;
+  background-image: url('/video/poster.jpg'); /* o tu stars.webp si la preparas */
+  background-size: cover;
+  background-position: center top;  /* prueba también center según te guste */
+  background-attachment: fixed;     /* ← clave del parallax */
+  opacity: 0.18;                    /* 0.12–0.18 en desktop */
+  filter: blur(0.5px); 
   z-index: -1;
 }
 
@@ -537,7 +537,7 @@ section.section {
   background: linear-gradient(135deg, rgba(20,20,20,0.95) 0%, rgba(30,30,40,0.95) 100%);
 }
 
-#experiencia::before, #educacion::before {
+#experiencia::before{
   content: '';
   position: absolute;
   top: 0;
@@ -548,9 +548,21 @@ section.section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.05;
+  opacity: 0.08;
   z-index: -1;
-  filter: blur(3px);
+  filter: blur(1.5px);
+}
+#educacion::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/video/poster.jpg'); /* o la misma stars.webp */
+  background-size: cover;
+  background-position: center;   /* aquí no hace falta “top”, mejor estable */
+  background-attachment: fixed;
+  opacity: 0.16;                 /* entre 0.14–0.18 va muy bien */
+  filter: blur(0.5px);           /* mínimo blur para mantener el grano */
+  z-index: -1
 }
 
 .timeline { 
@@ -569,19 +581,23 @@ section.section {
   width: 2px;
   opacity: 0.5;
 }
-.timeline-item { 
+.timeline-item {
   margin: 24px 0; 
   position: relative;
   padding: 20px;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
+
 .timeline-item:hover {
   background: rgba(255,255,255,0.05);
   border-color: rgba(93, 214, 255, 0.3);
   transform: translateX(8px);
+  animation: glow 2s ease-in-out infinite;
 }
 .timeline-item::before {
   content: '';
@@ -884,23 +900,7 @@ section.section {
 }
 
 /* Mejorar el timeline */
-.timeline-item {
-  margin: 24px 0; 
-  position: relative;
-  padding: 20px;
-  background: rgba(255,255,255,0.03);
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
 
-.timeline-item:hover {
-  background: rgba(255,255,255,0.05);
-  border-color: rgba(93, 214, 255, 0.3);
-  transform: translateX(8px);
-  animation: glow 2s ease-in-out infinite;
-}
 
 
 /* Mejorar los botones */

@@ -64,7 +64,7 @@ const education = [
     date: "",
     title: "Licenciatura en Ciencias de la Actividad Física y del Deporte",
     institution: "Universidad Politécnica de Madrid",
-    description: "Formación en salud, deporte y trabajo en equipo."
+    description: "Epecialidad en alto rendimiento deportivo"
   },
   {
     date: "",
