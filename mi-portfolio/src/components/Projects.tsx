@@ -30,9 +30,9 @@ const demoProjects = [
   {
     title: "Portfolio Personal",
     description:
-      "Portfolio moderno con hero en vídeo, efectos parallax sutiles inspirados en Alicante Futura Lab, y diseño optimizado para dispositivos móviles.",
+      "Portfolio moderno con hero en vídeo, efectos parallax y diseño optimizado para dispositivos móviles.",
     technologies: ["Next.js", "TypeScript", "CSS Modules", "Framer Motion"],
-    liveUrl: "https://mi-portfolio.vercel.app",
+    liveUrl: "https://blancacivieta.es",
     githubUrl: "https://github.com/BCivieta/portfolio",
     image: "/projects/portfolio.png",
     tags: ["Portfolio", "Design", "Animation"]
