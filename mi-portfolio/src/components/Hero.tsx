@@ -37,7 +37,7 @@ export default function Hero() {
         <p className="lead">Fullstack · Node · Next.js. Lógica, creatividad y trabajo en equipo.</p>
         <div className="cta">
           <a className="btn primary" href="#proyectos">Ver proyectos</a>
-          <a className="btn secondary" href="#trayectoria">Ver trayectoria</a>
+          <a className="btn secondary" href="/cv/BlancaCivieta_CV.pdf" target="_blank">Ver CV</a>
         </div>
       </div>
     </section>
