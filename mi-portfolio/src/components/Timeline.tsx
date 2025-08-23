@@ -2,13 +2,6 @@ import Section from "../components/Section";
 
 const experience = [
   {
-    date: "2025 - Presente",
-    title: "Desarrolladora Web Full Stack Jr.",
-    company: "Proyectos: Switkor (web) y TravelQuest (app móvil)",
-    description: "Desarrollo de aplicaciones full stack. En Switkor, generación automática de planes y dashboard; en TravelQuest, app de turismo gamificado con IA y validación de imágenes.",
-    technologies:  ["Next.js", "NestJS", "Node.js (Express)", "MySQL", "TypeORM", "React Native (Expo)", "Supabase"]
-  },
-  {
     date: "2025",
     title: "Desarrolladora Full Stack y Team Leader en prácticas",
     company: "Alicante furtura",
@@ -16,7 +9,7 @@ const experience = [
     technologies:  ["Node.js (Express)", "React Native (Expo)", "Supabase", "Google Cloud Vision API", "Google Gemini (Generative AI)", "Tailwind CSS"]
   },
   {
-    date: "2015-2025",
+    date: "2015 - 2025",
     title: "Entrenadora personal",
     company: "Funziona, JG Fitness y freelance",
     description: "Desarrollé programas de entrenamiento personalizados, gestioné clientes y optimicé procesos administrativos. ",
@@ -33,10 +26,10 @@ const experience = [
       "Orientación a resultados"]
     },
   {
-    date: "2005-2017",
-    title: "Jugadora federada de baloncesto (2años semiprofesional)",
+    date: "2005 - 2017",
+    title: "Jugadora federada de baloncesto (experiencia semiprofesional)",
     company: "Olimpico 64, C.B. Bembibre y C.B. Alcobendas",
-    description: "Mi experiencia en el deporte me ha enseñado la importancia de la disciplina, la organización y el trabajo en equipo.",
+    description: "Mi experiencia en el deporte me ha enseñado la importancia de la disciplina, la organización y el trabajo en equipo, habilidades que aplico en mi vida profesional.",
     label: "Competencias:",
     technologies:  ["Trabajo en equipo",
       "Gestión emocional",
@@ -55,19 +48,19 @@ const experience = [
 
 const education = [
   {
-    date: "2023 - 2025",
+    date: "2025",
     title: "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
     institution: "IES Mare Nostrum, Alicante",
     description: "Frontend, backend y bases de datos. Proyecto final: Switkor."
   },
   {
-    date: "",
+    date: "2015",
     title: "Licenciatura en Ciencias de la Actividad Física y del Deporte",
     institution: "Universidad Politécnica de Madrid",
-    description: "Epecialidad en alto rendimiento deportivo"
+    description: "Especialidad en alto rendimiento deportivo"
   },
   {
-    date: "",
+    date: "2021",
     title: "Inglés B1 (certificado)",
     institution: "",
     description: "Nivel intermedio acreditado."

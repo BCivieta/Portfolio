@@ -8,18 +8,18 @@ export default function Home() {
     <main id="inicio">
       <Hero />
       
-      <Section id="sobre-mi" title="Sobre mí" eyebrow="Quién eres">
+      <Section id="sobre-mi" title="Sobre mí" eyebrow="Quién soy">
         <div className="about-content">
           <div className="about-text">
             <p className="lead">
-                Soy desarrolladora web Full Stack Jr. con formación en Desarrollo de Aplicaciones Web
-                y una sólida trayectoria previa en el ámbito del deporte y la salud.
+                Soy desarrolladora Full Stack con formación en Desarrollo de Aplicaciones Web
+                y una sólida trayectoria previa en el ámbito del deporte y la salud, que me ha dado disciplina, organización y trabajo en equipo
             </p>
             
             <p>
               Me apasiona la combinación de lógica, creatividad y aprendizaje constante que ofrece 
-              el desarrollo web. Disfruto trabajando en equipo, compartiendo ideas y creando 
-              soluciones que aporten valor real a las personas.
+              el desarrollo. Disfruto trabajando en equipo, compartiendo ideas y creando 
+              soluciones.
             </p>
             
             <p>
@@ -33,22 +33,40 @@ export default function Home() {
               <div className="skills-grid">
                 <div className="skill-category">
                   <h4>Frontend</h4>
-                  <p>React, Next.js, TypeScript, CSS3, HTML5, Tailwind CSS</p>
+                  <p> React, Next.js,TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS</p>
                 </div>
                 <div className="skill-category">
-                  <h4>Backend</h4>
-                  <p>Node.js, Express, Nest, PostgreSQL, REST APIs</p>
+                  <h4>Backend & Bases de datos</h4>
+                  <p>Node.js, Express, NestJS,  REST APIs, MySQL, Supabase, TypeORM, SQL</p>
                 </div>
                 <div className="skill-category">
-                  <h4>Herramientas</h4>
-                  <p>Git, AWS, Vercel, Figma</p>
+                  <h4>Cloud & Herramientas</h4>
+                  <p> Git, GitHub, Figma, Vercel, Render, AWS</p>
+                </div>
+              </div>
+            </div>
+
+             <div className="skills-section">
+              <h3>Otras tecnologías utilizadas en mi aprendizaje y proyectos</h3>
+              <div className="skills-grid">
+                <div className="skill-category">
+                  <h4>Frontend & Mobile</h4>
+                  <p>React Native (Expo Router), Vue, Angular, Bootstrap</p>
+                </div>
+                <div className="skill-category">
+                  <h4>Backend & Bases de datos</h4>
+                  <p>C#, .NET, .NET Core</p>
+                </div>
+                <div className="skill-category">
+                  <h4>Cloud & Herramientas</h4>
+                  <p>Azure</p>
                 </div>
               </div>
             </div>
             
             <p>
                Mi objetivo es seguir creciendo como profesional, mejorar mis competencias técnicas 
-                y participar en proyectos que supongan un reto y un impacto positivo.
+                y participar en proyectos que supongan un reto.
             </p>
             
             <div className="cta-section">
@@ -65,9 +83,7 @@ export default function Home() {
       <Section id="contacto" title="¿Trabajamos juntos?" eyebrow="Contacto">
         <div className="contact-content">
           <p>
-            ¿Tienes un proyecto en mente? ¿Buscas un desarrollador que pueda llevar tus ideas 
-            al siguiente nivel? Me encantaría escuchar sobre tu proyecto y ver cómo podemos 
-            colaborar para hacerlo realidad.
+            Si buscas una desarrolladora Full Stack con ganas de aprender, aportar y adaptarse a distintos proyectos, me encantaría tener la oportunidad de colaborar en tu equipo.
           </p>
           
           <div className="contact-methods">
