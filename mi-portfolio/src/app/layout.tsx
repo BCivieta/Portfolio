@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Tecnología y Diseño",
+  title: "BC Portfolio | Tecnología y Diseño",
   description:
     "Portfolio personal con enfoque tech: proyectos, trayectoria y contacto. Hero con vídeo optimizado y secciones accesibles.",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://blancacivieta.es"),
   openGraph: {
-    title: "Portfolio | Tecnología y Diseño",
+    title: "BC Portfolio ",
     description:
       "Portfolio personal con enfoque tech: proyectos, trayectoria y contacto.",
     type: "website",

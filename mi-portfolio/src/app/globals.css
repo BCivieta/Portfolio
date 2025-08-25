@@ -88,6 +88,9 @@ header.site-header a.brand {
   font-weight: 700;
   letter-spacing: 0.3px;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Navegación móvil */
@@ -432,7 +435,7 @@ section.section {
       rgba(8,10,14,0.85) 0%,
       rgba(8,10,14,0.75) 50%,
       rgba(8,10,14,0.70) 100%),
-    url('/video/poster.jpg');
+    url('/image/poster.jpg');
 
   /* Ritmos distintos */
   background-attachment: scroll, scroll, fixed;
@@ -579,7 +582,7 @@ section.section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/video/poster.jpg');
+  background-image: url('/image/poster.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -604,7 +607,7 @@ section.section {
       rgba(8,10,14,0.85) 0%,
       rgba(8,10,14,0.75) 50%,
       rgba(8,10,14,0.70) 100%),
-    url('/video/poster.jpg');
+    url('/image/poster.jpg');
 
   /* Ritmos distintos */
   background-attachment: scroll, scroll, fixed;
