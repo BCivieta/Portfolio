@@ -105,32 +105,28 @@ export default function Home() {
           </p>
 
           <div className="contact-methods">
-            <div className="contact-method">
+            <a href="mailto:blancacivieta@gmail.com" className="contact-method">
               <h4>📧 Email</h4>
-              <a href="mailto:blancacivieta@gmail.com">
-                blancacivieta@gmail.com
-              </a>
-            </div>
-            <div className="contact-method">
+              <p>blancacivieta@gmail.com</p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-method"
+            >
               <h4>💼 LinkedIn</h4>
-              <a
-                href="https://www.linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348
-              </a>
-            </div>
-            <div className="contact-method">
+              <p>linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348</p>
+            </a>
+            <a
+              href="https://github.com/BCivieta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-method"
+            >
               <h4>🐙 GitHub</h4>
-              <a
-                href="https://github.com/BCivieta"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                github.com/BCivieta
-              </a>
-            </div>
+              <p>github.com/BCivieta</p>
+            </a>
             <div className="contact-download">
               <a
                 href="/cv/BlancaCivieta_CV.pdf"
@@ -148,11 +144,28 @@ export default function Home() {
       {/* Footer */}
       <footer className="site-footer">
         <div className="footer-content">
-          <p>© {new Date().getFullYear()} Blanca Civieta · Todos los derechos reservados</p>
+          <p>
+            © {new Date().getFullYear()} Blanca Civieta · Todos los derechos
+            reservados
+          </p>
           <div className="footer-links">
-            <a href="https://github.com/BCivieta" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="/cv/BlancaCivieta_CV.pdf" download>CV</a>
+            <a
+              href="https://github.com/BCivieta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/blanca-felisa-civieta-bermejo-9104a1348/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a href="/cv/BlancaCivieta_CV.pdf" download>
+              CV
+            </a>
           </div>
         </div>
       </footer>

@@ -748,32 +748,42 @@ section.section {
   margin-top: 32px;
   padding: 5px;
 }
+
 .contact-method {
-  padding: 20px;
+  display: block;
+ 
   background: rgba(255,255,255,0.05);
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  text-decoration: none; 
+  color: inherit;
 }
+
 .contact-method:hover {
   background: rgba(255,255,255,0.08);
   border-color: var(--accent);
   transform: translateY(-4px);
 }
+
 .contact-method h4 {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   color: #ffffff;
   font-weight: 600;
   text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 }
-.contact-method a {
+
+.contact-method p {
   color: var(--accent);
+  font-size: 14px;
   transition: color 0.2s;
 }
-.contact-method a:hover {
-  color: var(--foreground);
+
+.contact-method:hover p {
+  color:white;
 }
+
 
 /*Footer*/
 .site-footer {
