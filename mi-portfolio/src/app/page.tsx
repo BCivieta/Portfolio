@@ -99,9 +99,11 @@ export default function Home() {
       <Section id="contacto" title="¿Trabajamos juntos?" eyebrow="Contacto">
         <div className="contact-content">
           <p>
-            ¿Tienes un proyecto en mente? ¿Buscas un desarrollador que pueda
-            llevar tus ideas al siguiente nivel? Me encantaría escuchar sobre tu
-            proyecto y ver cómo podemos colaborar para hacerlo realidad.
+            <p>
+              Si buscas una desarrolladora Full Stack con ganas de aprender,
+              aportar y adaptarse a distintos proyectos, me encantaría tener la
+              oportunidad de colaborar en tu equipo.
+            </p>
           </p>
 
           <div className="contact-methods">
