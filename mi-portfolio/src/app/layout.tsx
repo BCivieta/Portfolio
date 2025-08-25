@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   title: "Portfolio | Tecnología y Diseño",
   description:
     "Portfolio personal con enfoque tech: proyectos, trayectoria y contacto. Hero con vídeo optimizado y secciones accesibles.",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://blancacivieta.es"),
   openGraph: {
-    title: "Portfolio | Tecnología y Diseño",
+    title: "Portfolio | Blanca Civieta",
     description:
       "Portfolio personal con enfoque tech: proyectos, trayectoria y contacto.",
     type: "website",
