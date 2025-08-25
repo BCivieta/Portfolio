@@ -31,7 +31,7 @@
 
 # 💻 Descripción
 
-Este es mi **portfolio personal**, desarrollado con **Next.js** y **CSS3**, donde muestro mis proyectos y trayectoria como desarrolladora de aplicaciones web.  
+Este es mi **portfolio personal**, desarrollado con **Next.js** y **CSS3**, donde muestro mis proyectos y trayectoria como desarrolladora de aplicaciones.  
 Actualmente se encuentra desplegado en **Vercel** y accesible en 👉 [https://blancacivieta.es](https://blancacivieta.es).
 
 ---
@@ -39,7 +39,7 @@ Actualmente se encuentra desplegado en **Vercel** y accesible en 👉 [https://b
 
 ## 🚀 Tecnologías principales
 
-- **Frontend:** Next.js 15, React 18
+- **Frontend:** Next.js 15.4.6, React 19.1.0
 - **Estilos:** CSS3
 - **Despliegue:** Vercel
 - **Control de versiones:** Git & GitHub
