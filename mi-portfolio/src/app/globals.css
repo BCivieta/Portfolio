@@ -640,14 +640,14 @@ section.section {
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.12);
   transition: all 0.3s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .timeline-item:hover {
   background: rgba(255,255,255,0.05);
   border-color: rgba(93, 214, 255, 0.3);
   transform: translateX(8px);
-  animation: glow 2s ease-in-out infinite;
+  
 }
 .timeline-item::before {
   content: '';
