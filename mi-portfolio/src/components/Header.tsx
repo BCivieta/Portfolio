@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -50,7 +51,14 @@ export default function Header() {
     <header className="site-header" data-scrolled={isScrolled}>
       <nav>
         <Link className="brand" href="#inicio" onClick={closeMobileMenu}>
-          Portfolio
+          <Image 
+            src="/image/logo.png" 
+            alt="Logo Blanca Civieta" 
+            width={40} 
+            height={40} 
+            priority 
+          />
+           <span>Portfolio</span>
         </Link>
 
         <button
